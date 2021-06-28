@@ -23,9 +23,9 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 		require 'vendor/autoload.php';
-        require 'vendor/PHPMailer/src/Exception.php';
-       require 'vendor/PHPMailer/src/PHPMailer.php';
-        require 'vendor/PHPMailer/src/SMTP.php';
+       // require 'vendor/PHPMailer/src/Exception.php';
+       //require 'vendor/PHPMailer/src/PHPMailer.php';
+       // require 'vendor/PHPMailer/src/SMTP.php';
 
 		$mail = new PHPMailer();
 
