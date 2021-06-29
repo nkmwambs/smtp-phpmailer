@@ -29,7 +29,7 @@ class Welcome extends CI_Controller {
 
 		$mail = new PHPMailer();
 
-		//try {
+		try {
 			//Server settings
 			//$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
 			$mail->isSMTP();                                            //Send using SMTP
@@ -54,15 +54,15 @@ class Welcome extends CI_Controller {
 		
 			//Content
 			$mail->isHTML(true);                                  //Set email format to HTML
-			$mail->Subject = 'Here is the subject';
-			$mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+			$mail->Subject = 'Testing PhpMailer';
+			$mail->Body    = 'Recieve EMAIL From <b>Amazon Web Services</b>';
 			$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 		
 			$mail->send();
 			echo 'Message has been sent';
-		//} catch (Exception $e) {
-			//echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-		//}
+		} catch (Exception $e) {
+			echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+		}
 
 		$this->load->view('welcome_message');
 	}
