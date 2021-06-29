@@ -33,15 +33,15 @@ class Welcome extends CI_Controller {
 			//Server settings
 			//$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
 			$mail->isSMTP();                                            //Send using SMTP
-			$mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+			$mail->Host       = 'smtp.office365.com';                     //Set the SMTP server to send through
 			$mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-			$mail->Username   = 'gtsafrdevteam';                     //SMTP username
-			$mail->Password   = '@Compassion123';                               //SMTP password
+			$mail->Username   = 'afrstaffrecognition@ke.ci.org';//'gtsafrdevteam';                     //SMTP username
+			$mail->Password   = 'Comp@ss1on@321!!@**@';//'@Compassion123';                               //SMTP password
 			$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
 			$mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 		
 			//Recipients
-			$mail->setFrom('gtsafrdevteam@gmail.com', 'Mailer');
+			$mail->setFrom('afrstaffrecognition@ke.ci.org', 'Mailer');
 			$mail->addAddress('livingstoneonduso@gmail.com', 'Onduso');     //Add a recipient
 			$mail->addAddress('londuso@ke.ci.org');   //Name is optional
 			$mail->addAddress('nkmwambs@gmail.com'); //Name is optional
