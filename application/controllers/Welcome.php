@@ -43,7 +43,11 @@ class Welcome extends CI_Controller {
 			//Recipients
 			$mail->setFrom('gtsafrdevteam@gmail.com', 'Mailer');
 			$mail->addAddress('livingstoneonduso@gmail.com', 'Onduso');     //Add a recipient
-			$mail->addAddress('londuso@ke.ci.org');               //Name is optional
+			$mail->addAddress('londuso@ke.ci.org');   //Name is optional
+			$mail->addAddress('nkmwambs@gmail.com'); //Name is optional
+			$mail->addAddress('nkarisa@ke.ci.org');    //Name is optional
+			$mail->addAddress('jmuchori@ke.ci.org'); //Name is optional
+			$mail->addAddress('gkimani@ke.ci.org');  //Name is optional
 			//$mail->addReplyTo('info@example.com', 'Information');
 			//$mail->addCC('cc@example.com');
 			//$mail->addBCC('bcc@example.com');
