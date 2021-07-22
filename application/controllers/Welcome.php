@@ -25,12 +25,12 @@ class Welcome extends CI_Controller {
 		$this->load->library('Email_library');
 
 		$this->email_library->do_email('londuso@ke.ci.org', 'Onduso');
-		// $this->email_library->do_email('nkarisa@ke.ci.org', 'karisa');
-		// $this->email_library->do_email('gkimani@ke.ci.org', 'Kimani');
-		// $this->email_library->do_email('jmuchori@ke.ci.org', 'Muchori');
-		// $this->email_library->do_email('nkmwambs@gmail.com', 'Karisa');
-		// $this->email_library->do_email('livingstoneonduso@gmail.com', 'Onduso');
-	//	$this->email_library->do_email('geogakim@gmail.com', 'Kimani');
+		$this->email_library->do_email('nkarisa@ke.ci.org', 'karisa');
+		$this->email_library->do_email('gkimani@ke.ci.org', 'Kimani');
+		$this->email_library->do_email('jmuchori@ke.ci.org', 'Muchori');
+		$this->email_library->do_email('nkmwambs@gmail.com', 'Karisa');
+		$this->email_library->do_email('livingstoneonduso@gmail.com', 'Onduso');
+		$this->email_library->do_email('geogakim@gmail.com', 'Kimani');
 
 		
 
